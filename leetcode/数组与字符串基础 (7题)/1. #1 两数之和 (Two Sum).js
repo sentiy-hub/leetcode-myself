@@ -40,3 +40,19 @@ var twoSum1 = function(nums, target) {
 console.log(twoSum([2,3,4,1,7],9));
 console.log(twoSum1([2,3,4,1,7],9));
 
+
+
+function twoSum3(nums, target) {
+    const map = new Map();
+    for (let i = 0; i < nums.length; i++) {
+        const gap = target - nums[i]
+        if (map.has(gap)) {
+            return[map.get(gap), i];
+        }
+        map.set(nums[i], i)
+    }
+    return []
+}
+
+console.log(twoSum3([2,3,4,1,7],8));
+
