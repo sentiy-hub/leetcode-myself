@@ -5,6 +5,7 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
+    "isolatedModules": true,  // 让每个文件作为单独的模块
     "forceConsistentCasingInFileNames": true
   }
 }
