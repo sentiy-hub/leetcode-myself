@@ -6,4 +6,4 @@ type Test = TupleToUnion<Arr> // expected to be '1' | '2' | '3'
 
 // type TupleToUnion <T extends any[]> = T[number]
 
-type TupleToUnion <T extends any[]> = T extends Array<infer U> ? U : never;
+type TupleToUnion <T extends any[]> = T extends Array<infer U> ? U : never
